@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brand-cream text-brand-black;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-green hover:bg-brand-green-dark text-white font-medium py-2 px-4 rounded-lg transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-brand-brown hover:bg-brand-brown-dark text-white font-medium py-2 px-4 rounded-lg transition-colors;
+  }
+
+  .container-padded {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
